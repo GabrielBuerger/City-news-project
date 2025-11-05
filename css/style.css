@@ -1,0 +1,31 @@
+/* site structure */
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../images/fundo.png) repeat-x;
+}
+
+#content {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+#top {
+    height: 150px;
+    padding-top: 25px;
+    background: url(../images/detalhe-topo.png) no-repeat right top;
+    border: 1px solid red;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(../images/logo.png);
+    text-indent: -3000px; /* alternative text for images file loading fail */
+}
