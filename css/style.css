@@ -9,15 +9,16 @@ body {
     background: #fff url(../images/fundo.png) repeat-x;
 }
 
-body section {
-    width: 700px;
+body div {
+    width: 800px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid red;
 }
 
-header {
+#header {
     height: 150px;
+    margin: 0 auto;
     padding-top: 25px;
     background: url(../images/detalhe-topo.png) no-repeat right top;
     border: 1px solid red;
@@ -36,17 +37,17 @@ ul {
     list-style: none;
 }
 
-header ul{
+#header ul{
     margin-top: 30px;
     background-color: #b10333;
     float: left;
 }
 
-header ul li{
+#header ul li{
     float: left;
 }
 
-header ul li a{
+#header ul li a{
     font-size: 0.9em;
     display: block;
     padding: 1em 1.5em;
@@ -55,11 +56,11 @@ header ul li a{
     background: url(../images/divisor.png) no-repeat left;
 }
 
-header ul .first a {
+#header ul .first a {
     background: none;
 }
 
-header ul li a:hover{
+#header ul li a:hover{
     color: #69001d;
 }
 
@@ -76,21 +77,34 @@ body.fotos #nav a#fotos
     cursor: text;
 }
 
-main {
+#main {
+    margin: 0 auto;
     margin-top: 60px;
+    padding: 0;
+    width: 750px;
+    border: solid red 1px;
     background: #f5f5f5;
 }
 
-#primary, #secundary {
+#main #primary {
+    margin: 0;
+    display: inline-block;
     width: 270px;
-    float: left;
-    border: solid, red 1px;
+    background-color: peru;
 }
 
-aside {
+#main #secundary {
+    margin: 0;
+    display: inline-block;
+    width: 270px;
+    background-color: blue;
+}
+
+#main #sidebar {
+    margin: 0;
+    display: inline-block;
     width: 180px;
-    float: left;
-    border: solid red 1px;
+    background-color: purple;
 }
 
 footer {
@@ -98,5 +112,6 @@ footer {
     padding: 20px;
     color: #fff;
     margin: 0 auto;
-    border: solid red 1px;
+    clear: both;
+    color: white;
 }
