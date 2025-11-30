@@ -6,30 +6,62 @@
     <title>Notícias cidade - Seu site de notícias</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="home">
+<body class="home" id="triple_layout">
     <div>
         <div id="header">
             <h1 class="logo">Notícias cidade</h1>
             <ul id="nav">
                 <li class="first"><a href="index.html" id="home">Home</a></li>
-                <li><a href="brazil.html" id="Brasil">Brasil</a></li>
+                <li><a href="brasil.html" id="Brasil">Brasil</a></li>
                 <li><a href="internacional.html" id="internacional">Internacional</a></li>
                 <li><a href="economy.html" id="economia">Economia</a></li>
                 <li><a href="healthy.html" id="saúde">Saúde</a></li>
                 <li><a href="science.html" id="ciência">Ciência</a></li>
-                <li><a href="photos.html" id="fotos">Fotos</a></li>
+                <li><a href="fotos.html" id="fotos">Fotos</a></li>
             </ul>
         </div>    
         <div id="main">
-            <div id="secundary">
-                secundário
+            <div>
+                <div id="primary" class="box">
+                    <h2>Última entrevista</h2>
+                    <section class="content">
+                        conteúdo <br>
+                        conteúdo <br>
+                        conteúdo <br>
+                    </section>
+                </div>
+                <div id="secundary" class="box">
+                    <h2>Secundário</h2>
+
+                </div>
             </div>
-            <div id="primary">
-                primário
+            <!-- Sidebar -->
+            <div id="sidebar" class="box">
+                <h2>Entrevistas</h2>
+                <section class="content">
+                    <ul>
+                        <li><a href="José almeida">José almeida</a></li>
+                        <li><a href="Felipe Silva">Felipe Silva</a></li>
+                        <li><a href="Renato Rodrigues">Renato Rodrigues</a></li>
+                        <li><a href="Aberlado Silveira">Aberlado Silveira</a></li>
+                        <li><a href="André Carlos">André Carlos</a></li>
+                        <li><a href="Márcio Mello">Márcio Mello</a></li>
+                        <li><a href="João Pedro">João Pedro</a></li>
+                        <li><a href="Fernando Weiss">Fernando Weiss</a></li>
+                    </ul>
+                </section>
+                <h2>News</h2>
+                <form action="">
+                    <section class="content">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="Dite seu e-mail">
+                    </section>
+                    <section>
+                        <input type="submit" value="cadastrar" id="cadastro" class="submit">
+                    </section>
+                </form>
             </div>
-            <div id="sidebar">
-                lateral
-            </div>
+            <!-- end sidebar -->
         </div>
     </div>
     <footer>
