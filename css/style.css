@@ -1,196 +1,224 @@
-/* site structure */
-* {
-    margin:0;
-    padding:0;
-}
-
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #fff url(../images/fundo.png) repeat-x;
-}
-
-body div {
-    width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-
-}
-
-#header {
-    height: 150px;
-    margin: 0;
-    padding-top: 25px;
-    background: url(../images/detalhe-topo.png) no-repeat right top;
-}
-
-.logo {
-    width: 152px;
-    height: 66px;
-    background: url(../images/logo.png);
-    text-indent: -3000px; /* alternative text for images file loading fail */
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#header ul{
-    margin-top: 30px;
-    background-color: #b10333;
-    float: left;
-}
-
-#header ul li{
-    float: left;
-}
-
-#header ul li a{
-    font-size: 0.9em;
-    display: block;
-    padding: 1em 1.5em;
-    text-decoration: none;
-    color: #ffffff;
-    background: url(../images/divisor.png) no-repeat left;
-    background-position: -1px;
-}
-
-#header ul .first a {
-    background: none;
-}
-
-#header ul li a:hover{
-    color: #69001d;
-}
-
-body.home #nav a#home,
-body.brasil #nav a#Brasil,
-body.internacional #nav a#internacional,
-body.economia #nav a#economia,
-body.saúde #nav a#saúde,
-body.ciência #nav a#ciência,
-body.fotos #nav a#fotos
-{
-    color: #fff;
-    background-color: #de003e;
-    cursor: text;
-}
-
-.box {
-    margin: 10px 0;
-    padding: 5px 0;
-    background: #f3f3f3 url(../images/fundo-caixa.png);
-}
-
+/* general formats*/ 
 h2 {
     font-size: 1.1em;
     background-color: #294c71;
     color: #fff;
     padding: 5px;
 }
-
-.content {
-    clear: both;
+h3{
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight:bold;
+    font-size: 0.8em;
+    margin: 10px 3px 5px 0;
     padding: 5px;
-    margin: 5px 0;
-    background-color: #fff;
+    background-color:#dfdfdf;
 }
-
-/* Single layout */
-
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.box {
+    margin: 10px 0;
+    padding: 5px 0;
+    background: #f3f3f3 url(../images/fundo-caixa.png);
+}
+img {
+    width: 99%;
+    border: 2px solid #dfdfdf;
+}
+/* site backgroud */ 
+* {
+    margin:0;
+    padding:0;
+} 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../images/fundo.png) repeat-x;
+}
+/* site structure */ 
+body div {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+} 
+#header {
+    height: 150px;
+    margin: 0;
+    padding-top: 25px;
+    background: url(../images/detalhe-topo.png) no-repeat right top;
+}
+    /* header logo */
+    .logo {
+        width: 152px;
+        height: 66px;
+        background: url(../images/logo.png);
+        text-indent: -3000px; /* alternative text for images file loading fail */
+    }
+    /* Navegation bar */
+        /* solid base */
+        #header ul{
+            margin-top: 30px;
+            background-color: #b10333;
+            float: left;
+        }
+        #header ul li{
+            float: left;
+        }
+        /* links config */
+        #header ul .first a {
+            background: none;
+        }
+        #header ul li a{
+            font-size: 0.9em;
+            display: block;
+            padding: 1em 1.5em;
+            text-decoration: none;
+            color: #ffffff;
+            background: url(../images/divisor.png) no-repeat left;
+            background-position: -1px;
+        } 
+        #header ul li a:hover{
+            color: #69001d;
+        }
+            /* Current page link */
+            body.home #nav a#home,
+            body.brasil #nav a#Brasil,
+            body.internacional #nav a#internacional,
+            body.economia #nav a#economia,
+            body.saúde #nav a#saúde,
+            body.ciência #nav a#ciência,
+            body.fotos #nav a#fotos{
+                color: #fff;
+                background-color: #de003e;
+                cursor: text;
+            }
 #main {
     margin-top: 60px;
     padding: 0;
     background: #f5f5f5;
 }
-
-#single_layout #main div {
-    width: 800px;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-/* sidebar */
-
-#double_layout #main #sidebar, 
-#triple_layout #main #sidebar {
-    float: left;
-    margin-bottom: 20px;
-    width: 180px;
-}
-
-#sidebar ul li a{
-    font-size: 0.9em;
-    padding: 3px;
-    display: block;
-    line-height: 30px;
-    font-size: large;
-    text-decoration: none;
-    color: black;
-    border-bottom: #f3f3f3;
-}
-
-#sidebar ul li a:hover{
-    padding-left: 20px;
-    color: #a1a1a1;
-    background: #f9f9f9 url(../images/marcador.png) no-repeat left center;
-}
-
-label {
-    display: block;
-    cursor: pointer;
-}
-
-input {
-    padding: 5px;
-    width: 125px;
-    font-size: 0.9em;
-    background-color: #fff;
-}
-
-input.submit {
-    width: 80px;
-    color: #fff;
-    background-color: #b10333;
-    border: 2px solid #69001d;
-    cursor: pointer;
-}
-
-input.submit:hover {
-    background-color: #de003e;
-    border: 2px solid #b10333;
-}
-
-/* main content */
-
-#double_layout #main div,
-#triple_layout #main div{
-    float: right;
-    width: 580px;
-    padding: 0;
-}
-
-/* triple layout */
-
-#triple_layout #main div #primary {
-    float:left;
-    width: 270px;
-}
-
-#triple_layout #main div #secundary {
-    margin-left: 15px;
-    float: right;
-    width: 270px;
-}
-
-/* footer */
-
+    .highlight{
+        background-color: #b10333;
+        color: #fff;
+    }
+    .main_content{
+        background-color: #f3f3f3;
+        margin-bottom: 10px;
+    }
+    .main_content:hover{
+        background-color: #eee;
+        cursor: pointer;
+    }
+    /* main content */
+    #single_layout #main div {
+        width: 800px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    #double_layout #main div,
+    #triple_layout #main div{
+        float: right;
+        width: 580px;
+        padding: 0;
+    }
+        /* content subdivs */
+            #triple_layout #main div #primary {
+                float:left;
+                width: 270px;
+            }
+            #triple_layout #main div #secundary {
+                margin-left: 15px;
+                float: right;
+                width: 270px;
+            }
+        /* list config */
+            #posts li {
+                margin-top: 10px;
+                padding: 10px 2px 5px 0;
+                border-bottom: #ccc solid 1px;
+                height: 60px;
+                background-color: #f3f3f3;
+            }
+            #posts li:hover{
+                background-color: #eee;
+                cursor: pointer;
+            }
+            #posts li a img {
+                float: left;
+                width: 80px;
+            }
+            #posts li a {
+                text-decoration: none;
+            }
+            #posts li a h4 {
+                padding-left: 2px;
+                font-size: 1em;
+                color: #3e7ab9;
+            }
+            #posts li a p{
+                padding-left: 2px;
+                font-size: 0.8em;
+            }
+    /* sidebar */
+    #double_layout #main #sidebar, 
+    #triple_layout #main #sidebar {
+        float: left;
+        margin-bottom: 20px;
+        width: 180px;
+    }
+        .sidebar_content {
+            clear: both;
+            padding: 5px;
+            margin: 5px 0;
+            background-color: #fff;
+        }
+        /* sidebar's links section */
+            #sidebar ul li a{
+                font-size: 0.9em;
+                padding: 3px;
+                display: block;
+                line-height: 30px;
+                font-size: large;
+                text-decoration: none;
+                color: black;
+                border-bottom: #f3f3f3;
+            }
+            #sidebar ul li a:hover{
+                padding-left: 20px;
+                color: #a1a1a1;
+                background: #f9f9f9 url(../images/marcador.png) no-repeat left center;
+            }
+        /* registration section*/
+            label {
+                display: block;
+                cursor: pointer;
+            }
+            /* registration imput box*/
+            input {
+                padding: 5px;
+                width: 125px;
+                font-size: 0.9em;
+                background-color: #fff;
+            }
+            /* registration confirmation button */
+            input.submit {
+                width: 80px;
+                color: #fff;
+                background-color: #b10333;
+                border: 2px solid #69001d;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            input.submit:hover {
+                background-color: #de003e;
+                border: 2px solid #b10333;
+            }
 footer {
     background: #294c71;
     padding: 20px;
     color: #fff;
     margin: 0 auto;
     clear: both;
-    color: white;
-}
+    color: white;}
